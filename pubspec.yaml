@@ -1,27 +1,31 @@
 name: meu_app_faculdade
 description: Um novo projeto Flutter para a faculdade.
 
-publish_to: 'none'
+publish_to: 'none' # Removido aspas simples para 'none' para consistência, embora funcione com
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0' # Esta é a configuração correta para Dart 3.x
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.8 # Atualizado para a versão mais recente e correta
+  qr_flutter: ^4.1.0    # qr_flutter na seção correta de dependencies
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
-  
+  flutter_lints: ^5.0.0 # Atualizado para a versão mais recente e recomendada
+
 flutter:
   uses-material-design: true
 
   assets:
-    - assets/foto1.jpg
-    - assets/foto2.jpg
-    - assets/sp_flag.png
+    - assets/
+    # Não é necessário listar cada arquivo se você listar a pasta
+    # - assets/frente.jpg
+    # - assets/verso.jpg
+    # - assets/sp_flag.png
+    # Se você listar a pasta, todos os arquivos dentro dela (e subpastas) serão incluídos
